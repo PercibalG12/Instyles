@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .foot{
+        padding: 40px 80px;
+    }
+    
+    
+    /* navigatiopn  */
+    nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    /* box-shadow: 2px 2px 10px rgb(0, 2, 128); */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    }
+    
+    nav img{
+    width: 100px;
+    /* remove height if necessary for media query  */
+     height: 45px; 
+     width: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    
+    nav .navigation ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    nav .navigation ul li{
+        list-style: none;
+        margin-left: 30px;
+        text-decoration: none;
+        color: royalblue;
+    }
+    
+    nav .navigation ul li a{
+        text-decoration: none;
+        color: royalblue;
+        font-size: 16px;
+        font-weight: 700;
+        transition: 1s ;
+    }
+/* login button */
+  
+   
+    
+    nav .navigation ul li a:hover{
+        /* color: rgb(197, 55, 20); */
+        color: #000;
+        /* top: -25px;
+        left: 35px;
+        width: 500px;
+        height: auto;
+         display: block; 
+        z-index: 999;
+         position: relative; 
+        font-size: 50px; */
+    }
+    
+    nav .navigation{
+        display:flex;
+    }
+
+
+    /* hero section */
+ #hero{
+background-image: url("Assets/vladimir-yelizarov-l2SZ48MVw6E-unsplash.jpg");
+background-position: top 10% right 0; 
+background-size: cover;
+height: 110vh; 
+width: 88%;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+ }
+
+ #hero p{
+ font-size:8px;
+ color: thistle;
+ }
+
+ #hero h1{
+    font-size:80px;
+    color: yellow;
+    }
+
+    #hero h2{
+        font-size:60px;
+        color: blue;
+        }
+
+        #hero h4{
+            font-size:20px;
+            color:#000;
+            line-height: 5px;
+            }
+
+            #hero button{
+                background-color: transparent;
+                background-image: url("Assets/btn-img.jpeg");
+                color: black;
+                border: 0;
+                border-radius: 20px;
+                padding:14px;
+                font-weight: 900;
+                margin-top: 5px;
+                }
+
+                #hero button:hover{
+                    background-color: transparent;
+                    background-image: url("Assets/btn-image2.jpg");
+                    color: blue;
+                    border: 0;
+                    border-radius: 20px;
+                    padding:14px;
+                    cursor: pointer;
+                    font-weight: 900;
+                    transition: 1.5s ease;
+                    }
+
+                    /* Products */
+                    #Products{
+                        text-align: center;
+                        margin-top: 30px ;
+                    }
+
+                    #Products .pro-container{
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 20px;
+                        flex-wrap: wrap;
+                    }
+
+                    #Products .pro{
+                        width: 20%;
+                        min-width: 250px;
+                        padding: 10px 12px;
+                        border: 1px solid rgb(154, 154, 248);
+                        border-radius: 25px;
+                        cursor: pointer;
+                        box-shadow: 20px 20px 30px rgba(0, 0, 0,0.2);
+                        margin-left: 50px;
+                        margin: 30px ;
+                    }
+
+                    #Products .pro:hover{
+                        box-shadow: 20px 20px 30px rgba(0, 0, 0,0.8);   
+                    }
+
+                    #Products .pro img{
+                        width: 100%;
+                        border-radius: 20px;
+                    }
+
+                    #Products .pro img:hover{
+                        transition: 2s linear;
+                       transform:scale(0.8);
+                    }
+
+                    #Products .pro h5{
+                        font-size: 14px;
+                        padding: 7px;
+                        color: #1a1a1a;
+                    }
+
+                    #Products .pro h4{
+                        font-size: 14px;
+                        padding: 7px;
+                        font-weight: 700;
+                        color: #1a1a1a;
+                    }
+
+                    #Products .pro i{
+                        font-size: 14px;
+                        color: orange;
+                    }
+
+                    /* banner */
+                    #banner{
+                        margin: 40px 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        background-image: url("Assets/content-pixie-ZB4eQcNqVUs-unsplash.jpg"); 
+                        background-size: cover;
+                        background-position: center;
+                        width: 100%;
+                        height: 40vh;
+                    }
+
+                    #banner h4{
+                        font-size: 20px;
+                    }
+
+                    #banner h2{
+                        font-size: 50px;
+                        padding: 30px 0;
+                    }
+
+                    #banner span{
+                        color: blue;
+                    }
+
+                    #banner button{
+                        font-size: 14px;
+                        font-weight: 600;
+                        padding: 15px 30px;
+                        color: #000;
+                        background-color: #fff;
+                        border: 5px;
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                        transition: 0.5s ease
+                    }
+
+                    #banner button:hover{
+                     color: #fff ;
+                     background-color: #000;
+                     /* transition: 2s linear; */
+                     transform:scale(0.8);
+                    }
+
+                    /* newsletter */
+                    #newsletter{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        background-image: url("Assets/resul-mentes-DbwYNr8RPbg-unsplash.jpg");
+                        background-repeat: no-repeat;
+                        background-position: 20% 30%;
+                        background-color: aquamarine;
+                        /* padding-top: 40px 40px;
+                        margin: 40px 40px; */
+                        background-size: cover;
+                    }
+
+                    #newsletter .newstext{
+                        margin: 40px 0;
+                    }
+
+                    #newsletter h4{
+                        font-size: 22px;
+                        font-weight: 700;
+                        color: #fff;
+                        padding-top: 40px;
+                        /* margin: 20px; */
+                    }
+
+                    #newsletter p{
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #fff;
+                        padding-top: 40px;
+                        /* margin: 20px; */
+                    }
+
+                    #newsletter span{
+                        color: red;
+                    }
+
+                    #newsletter input{
+                        padding: 0 1.25px;
+                        height: 2.12rem;
+                        font-size: 14px;
+                        border: 1px solid transparent;
+                        width:80%;
+                        border-radius: 4px;
+                        outline: none;
+                    }
+
+                    #newsletter button{
+                        font-size: 10px;
+                        font-weight: 400;
+                        padding: 15px 30px;
+                        color: #000;
+                        background-color: #fff;
+                        border: 3px;
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                        transition: 0.5s ease;
+                        white-space: nowrap;
+                    }
+
+                    #newsletter button:hover{
+                     color: #fff ;
+                     background-color: #000;
+                     /* transition: 2s linear; */
+                     transform:scale(0.8);
+                     cursor: pointer;
+                    }
+
+                   /* footer */
+
+                   footer{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                   }
+
+                   footer .col{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    align-items: flex-start;
+                   }
+
+                    .foot .zz{
+                        border: 1 px solid rgba(0, 0, 0,0.2);
+                     border-radius: 50px;
+                     margin-bottom: 30px;
+                    }
+
+                    .foot .zz:hover{
+                    transition: 2s linear;
+                    transform:scale(1.2);
+                    }
+
+                    footer h4{
+                        font-size: 30px;
+                        padding-bottom: 20px;
+                    }
+
+                    footer p{
+                        font-size: 15px;
+                        margin: 0 0 8px 0;
+                    }
+
+                    footer a{
+                        font-size: 13px;
+                        text-decoration: none;
+                        color: royalblue;
+                        margin-bottom: 10px;
+                    }
+
+                    footer .Follow {
+                        margin-top: 20px;
+                    }
+
+                    footer .Follow i{
+                        color: royalblue;
+                        padding-right: 4px;
+                        cursor: pointer;
+                    }
+
+                    footer .Follow i:hover,
+                    footer a:hover{
+                        color: rgb(135, 50, 204);
+                        /* padding-right: 4px;
+                        cursor: pointer; */
+                    }
+
+                    footer .col-install .row img{
+                     border: 1px solid rgba(50, 17, 128, 0.699);
+                     border-radius: 5px;
+                    }
+
+                    footer .col-install  img{
+                        margin: 10px 0 15px 0;
+                       }
+
+                       /* media query */
+                       @media (max-width:800px) {
+                        nav .navigation ul {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            position: flixed;
+                            top: 0;
+                            right:0px;
+                            height: 40vh;
+                            width: 150px;
+                            background-color: rgba(4, 5, 7, 0.699);
+                            box-shadow: 0 40px 60px rgba(0, 0, 0,0.8);
+                        }
+                       }
+
+
+
+                    
